@@ -1,10 +1,8 @@
 body {
-  background: radial-gradient(
-    circle,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 9%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: #00a2a8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* HEADER */
@@ -16,6 +14,7 @@ body {
   padding: 0 3rem;
   height: 5rem;
   position: relative;
+  color: #000;
 }
 
 .logo-container img {
@@ -61,7 +60,6 @@ body {
 }
 .nav-links a {
   text-decoration: none;
-  color: #000;
   font-weight: 700;
   font-size: 1.2rem;
   text-align: center;
@@ -81,8 +79,40 @@ body {
   transform: rotate(-45deg) translate(5px, -10px);
 }
 
-h2 {
+.main-content {
+  flex: 1;
+  min-height: calc(100vh - 10rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
   text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #33fff9;
+  color: #000;
+  text-align: center;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+  height: 5rem;
+}
+
+.footer-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.footer-content p {
+  font-size: 1rem;
+  opacity: 0.8;
 }
 
 /* DESKTOP - menú horizontal y visible */

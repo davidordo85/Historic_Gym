@@ -2,7 +2,7 @@ console.log('nuevo ejercicio');
 import { ejercicios } from './exercises.js';
 
 function cargarEjerciciosEnSelect() {
-    const select = document.getElementById('ejercicio');
+    const select = document.getElementById('exersice');
 
     // Limpiar opciones previas excepto la primera
     select.innerHTML = '<option value="">Selecciona el ejercicio</option>';

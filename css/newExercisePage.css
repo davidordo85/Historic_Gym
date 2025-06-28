@@ -1,6 +1,14 @@
 .new-exercise-page-container {
   display: none;
   padding: 1rem;
+  background: #05646a;
+}
+
+.new-exercise-page-container,
+#date,
+#exercise,
+.button-save-exercise {
+  color: white;
 }
 
 #add-exercise-form {
@@ -8,4 +16,77 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+#add-exercise-form > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.date-input-container {
+  /* border: solid 0.1rem black; */
+  width: 75vw;
+}
+
+label {
+  margin-bottom: 1rem;
+}
+
+input,
+select {
+  border-bottom: solid 0.1rem white;
+  width: 75vw;
+  text-align: center;
+}
+
+option {
+  color: black;
+}
+
+optgroup {
+  color: #05646a;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.select-wrapper select {
+  width: 100%;
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
+  border-radius: 4px;
+  appearance: none;
+  font-size: 1rem;
+  color: white;
+  background-position: right 0.75rem center;
+  background-size: 0.65rem auto;
+  cursor: pointer;
+}
+
+.button-save-exercise {
+  margin: 1rem;
+  background-color: #002f35;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-save-exercise:hover {
+  background-color: #004650;
+  transform: translateY(-2px);
+}
+
+.button-save-exercise:active {
+  transform: translateY(0);
+  background-color: #001c1f;
 }
