@@ -80,12 +80,12 @@ body {
 }
 
 .main-content {
-  flex: 1;
-  min-height: calc(100vh - 10rem);
+  flex: 1; /* ocupa todo el espacio restante */
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  /* ya no centramos verticalmente */
 }
 
 h1 {
