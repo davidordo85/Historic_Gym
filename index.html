@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/indexPage.css" />
     <link rel="stylesheet" href="./css/newExercisePage.css" />
 
     <title>Historico Gym</title>
@@ -37,6 +38,36 @@
       </nav>
     </header>
     <main class="main-content">
+      <div class="index-page-container page-section" id="index-page-container">
+        <h1>Bienvenido a Histórico Gym</h1>
+        <div class="index-page-target-container">
+          <h2 id="pageGreeting">Bienvenido</h2>
+
+          <div class="user-name-container" id="userNameContainer">
+            <label for="userNameInput">Escribe tu nombre</label>
+            <input type="text" id="userNameInput" placeholder="Tu nombre" />
+          </div>
+
+          <div class="data-buttons-container">
+            <button
+              id="createDataBtn"
+              type="button"
+              class="button-save-exercise"
+            >
+              Crear Datos
+            </button>
+            <button id="loadDataBtn" type="button" class="button-save-exercise">
+              Cargar Datos
+            </button>
+            <input
+              type="file"
+              id="fileInputJson"
+              accept=".json"
+              style="display: none"
+            />
+          </div>
+        </div>
+      </div>
       <div
         class="new-exercise-page-container page-section"
         id="new-exercise-page-container"
@@ -101,5 +132,6 @@
   </body>
   <script type="module" src="./js/index.js"></script>
   <script type="module" src="./js/routePages.js"></script>
+  <script type="module" src="./js/data/dataScript.js"></script>
   <script type="module" src="./js/exercises/newExerciseScript.js"></script>
 </html>

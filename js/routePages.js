@@ -1,5 +1,6 @@
 function handleRouteChange() {
     const hash = window.location.hash;
+    console.log(hash)
 
     // Oculta todas las secciones controladas por hash
     document.querySelectorAll('.page-section').forEach(section => {
@@ -9,6 +10,9 @@ function handleRouteChange() {
     // Muestra la que corresponde al hash actual
     if (hash === '#nuevo-entrenamiento') {
         document.getElementById('new-exercise-page-container').style.display = 'block';
+    }
+    if (hash === '' || hash === '#inicio') {
+        document.getElementById('index-page-container').style.display = 'flex'
     }
 }
 
