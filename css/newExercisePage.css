@@ -1,0 +1,11 @@
+.new-exercise-page-container {
+  display: none;
+  padding: 1rem;
+}
+
+#add-exercise-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

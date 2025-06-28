@@ -1,0 +1,33 @@
+{
+  "usuario": "Nombre del usuario",
+  "historico": [
+    {
+      "fecha": "2025-06-24",
+      "entrenamiento": [
+        {
+          "ejercicio": "Sentadillas",
+          "repeticiones": 12,
+          "series": 4,
+          "peso": 80
+        },
+        {
+          "ejercicio": "Press de banca",
+          "repeticiones": 10,
+          "series": 3,
+          "peso": 60
+        }
+      ]
+    },
+    {
+      "fecha": "2025-06-22",
+      "entrenamiento": [
+        {
+          "ejercicio": "Dominadas",
+          "repeticiones": 8,
+          "series": 3,
+          "peso": 0
+        }
+      ]
+    }
+  ]
+}

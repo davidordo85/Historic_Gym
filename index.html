@@ -8,8 +8,9 @@
       type="image/x-icon"
       href="./assets/images/gym-icon_30328.ico"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/newExercisePage.css" />
 
     <title>Historico Gym</title>
   </head>
@@ -37,8 +38,68 @@
     </header>
     <main>
       <h1>Esto es la zona</h1>
+      <div
+        class="new-exercise-page-container page-section"
+        id="new-exercise-page-container"
+      >
+        <h2>Nuevo entrenamiento</h2>
+        <form id="add-exercise-form">
+          <!-- Fecha del entrenamiento -->
+          <div>
+            <label for="fecha">Selecciona la fecha</label>
+            <input type="date" id="fecha" name="fecha" required />
+          </div>
+
+          <!-- Selección del ejercicio -->
+          <div>
+            <label for="ejercicio">Ejercicio</label>
+            <select id="ejercicio" name="ejercicio" required>
+              <option value="">Selecciona el ejercicio</option>
+              <!-- Aquí puedes inyectar los ejercicios dinámicamente -->
+            </select>
+          </div>
+
+          <!-- Número de series -->
+          <div>
+            <label for="series">Nº de series</label>
+            <input type="number" id="series" name="series" min="1" required />
+          </div>
+
+          <!-- Número de repeticiones -->
+          <div>
+            <label for="repeticiones">Nº de repeticiones</label>
+            <input
+              type="number"
+              id="repeticiones"
+              name="repeticiones"
+              min="1"
+              required
+            />
+          </div>
+
+          <!-- Peso utilizado -->
+          <div>
+            <label for="peso">Peso (kg)</label>
+            <input
+              type="number"
+              id="peso"
+              name="peso"
+              step="0.5"
+              min="0"
+              required
+            />
+          </div>
+
+          <!-- Botón de enviar -->
+          <div>
+            <button type="submit">Guardar ejercicio</button>
+          </div>
+        </form>
+      </div>
     </main>
     <footer>Esto es el footer</footer>
   </body>
   <script type="module" src="./js/index.js"></script>
+  <script type="module" src="./js/routePages.js"></script>
+  <script type="module" src="./js/exercises/newExerciseScript.js"></script>
 </html>

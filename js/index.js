@@ -1,4 +1,4 @@
-/* let historial = {};
+let historial = {};
 
 function agregarEntrenamiento() {
     const fecha = document.getElementById("fecha").value;
@@ -53,7 +53,7 @@ function cargarJSON() {
         }
     };
     reader.readAsText(file);
-} */
+}
 
 // Variables que ya tienes
 const burger = document.querySelector('.burger');
